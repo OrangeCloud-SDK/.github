@@ -1,92 +1,98 @@
 <div align="center">
 
-# 🍊 OrangeCloud IM SDK
+# 🍊 OrangeCloud SDK
 
-**跨平台即时通信 SDK — 为直播、社交、协作场景而生**
+**企业级云服务 SDK — 为直播、社交、视频场景提供全栈解决方案**
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://github.com/OrangeCloud-SDK/orangecloud-im-flutter)
-[![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/OrangeCloud-SDK/orangecloud-im-ios)
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/OrangeCloud-SDK/orangecloud-im-android)
-[![Web](https://img.shields.io/badge/Web-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://github.com/OrangeCloud-SDK/orangecloud-im-web)
+[![GitHub Org](https://img.shields.io/badge/GitHub-OrangeCloud--SDK-181717?style=for-the-badge&logo=github)](https://github.com/OrangeCloud-SDK)
 
 </div>
 
 ---
 
-## ✨ 特性
+## 🎯 产品矩阵
 
-- 🚀 **高性能** — 基于 SignalR 长连接，毫秒级消息送达
-- 📱 **全平台** — Flutter / iOS / Android / Web / 小程序，一套 API 全覆盖
-- 🔄 **自动重连** — 内置指数退避重连策略，断网恢复无感知
-- 👥 **群组管理** — 加入/退出房间、在线人数、成员列表
-- 💬 **丰富消息** — 文本、礼物、弹幕、系统公告、关播通知
-- 🔒 **安全鉴权** — HMAC-SHA256 签名 + 域名白名单 + 包名校验
-- 📊 **用量统计** — DAU、消息量、峰值连接数实时监控
+### 💬 IM SDK — 即时通信
 
----
-
-## 📦 SDK 仓库
+为直播间、社交、协作场景提供实时消息能力。基于 SignalR 长连接，支持群组消息、在线状态、礼物弹幕、禁言管理。
 
 | 平台 | 仓库 | 安装方式 |
 |:---:|------|----------|
-| 🐦 Flutter | [orangecloud-im-flutter](https://github.com/OrangeCloud-SDK/orangecloud-im-flutter) | `git` 依赖 in pubspec.yaml |
+| 🐦 Flutter | [orangecloud-im-flutter](https://github.com/OrangeCloud-SDK/orangecloud-im-flutter) | Git 依赖 / pub |
 | 🍎 iOS | [orangecloud-im-ios](https://github.com/OrangeCloud-SDK/orangecloud-im-ios) | Swift Package Manager |
-| 🤖 Android | [orangecloud-im-android](https://github.com/OrangeCloud-SDK/orangecloud-im-android) | AAR 本地引用 |
-| 🌐 Web | [orangecloud-im-web](https://github.com/OrangeCloud-SDK/orangecloud-im-web) | npm / 直接引用 |
+| 🤖 Android | [orangecloud-im-android](https://github.com/OrangeCloud-SDK/orangecloud-im-android) | AAR 引用 |
+| 🌐 Web | [orangecloud-im-web](https://github.com/OrangeCloud-SDK/orangecloud-im-web) | npm / JS 引用 |
 | 🎮 Demos | [orangecloud-im-demos](https://github.com/OrangeCloud-SDK/orangecloud-im-demos) | 四端完整示例 |
 
----
-
-## 🚀 快速开始
-
-### Flutter
-```yaml
-dependencies:
-  orangecloud_im_client:
-    git:
-      url: https://github.com/OrangeCloud-SDK/orangecloud-im-flutter.git
-      ref: v1.0.0
-```
-
-### iOS (Swift Package Manager)
-```swift
-.package(url: "https://github.com/OrangeCloud-SDK/orangecloud-im-ios.git", from: "1.0.0")
-```
-
-### Android
-下载 [AAR](https://github.com/OrangeCloud-SDK/orangecloud-im-android/releases) 放入 `libs/` 目录：
-```kotlin
-implementation(files("libs/orangecloud-im-client-release.aar"))
-```
-
-### Web
-```html
-<script src="dist/index.js"></script>
-```
+**核心特性：** 毫秒级送达 · 自动重连 · 群组管理 · 礼物/弹幕 · 敏感词过滤 · 域名白名单 · Webhook 回调
 
 ---
 
-## 💰 套餐
+### 🎬 Player SDK — 视频播放器
 
-| | 免费版 | 基础版 ¥399/月 | 专业版 ¥999/月 |
-|--|:---:|:---:|:---:|
-| DAU | 100 | 10,000 | 100,000 |
-| 房间数 | 3 | 50 | 无限 |
-| 单房间人数 | 50 | 500 | 5,000 |
-| 每日消息 | 1万 | 50万 | 不限 |
-| 消息存储 | - | 7天 | 30天 |
-| Webhook | ❌ | ❌ | ✅ |
+企业级跨平台视频播放器，支持点播/直播、DRM 加密、字幕、画中画、短视频模式、离线下载。
+
+| 平台 | 仓库 | 安装方式 |
+|:---:|------|----------|
+| 🐦 Flutter | [orangecloud-player-flutter](https://github.com/OrangeCloud-SDK/orangecloud-player-flutter) | Git 依赖 / pub |
+| 🍎 iOS | [orangecloud-player-ios](https://github.com/OrangeCloud-SDK/orangecloud-player-ios) | Swift Package Manager |
+| 🤖 Android | [orangecloud-player-android](https://github.com/OrangeCloud-SDK/orangecloud-player-android) | AAR 引用 |
+| 🌐 Web | [orangecloud-player-web](https://github.com/OrangeCloud-SDK/orangecloud-player-web) | npm / JS 引用 |
+| 🎮 Demos | [orangecloud-player-demos](https://github.com/OrangeCloud-SDK/orangecloud-player-demos) | 四端完整示例 |
+
+**核心特性：** 点播/直播 · DRM 加密 · 多字幕 · 画中画 · 短视频模式 · 离线下载 · 智能预加载 · 自适应码率
 
 ---
 
-## 📖 文档
+## ✨ 为什么选择 OrangeCloud
 
-完整的接入文档、API 参考和最佳实践，请访问我们的开发者文档站。
+| | OrangeCloud | 其他方案 |
+|--|:---:|:---:|
+| 全平台覆盖 | ✅ Flutter/iOS/Android/Web | 部分平台 |
+| 开箱即用 | ✅ 5 分钟接入 | 复杂配置 |
+| 按需付费 | ✅ 免费版起步 | 高门槛 |
+| 源码可见 | ✅ 开源 SDK | 黑盒 |
+| 中文支持 | ✅ 中文文档 + 技术支持 | 英文为主 |
+
+---
+
+## 💰 商业模式
+
+SDK 开源免费，按 **API Key 订阅收费**：
+
+- **免费版** — 体验全部功能，适合开发调试
+- **基础版** — 满足中小型应用，¥399/月起
+- **专业版** — 无限制 + 高级功能，¥999/月起
+
+---
+
+## 📖 快速开始
+
+```dart
+// Flutter - IM SDK
+import 'package:orangecloud_im_client/orangecloud_im_client.dart';
+
+final im = OrangeCloudIMClient();
+await im.login(hubUrl, appId, userId, userSig);
+await im.joinGroup('room_001');
+im.onMessageReceived.listen((msg) => print(msg));
+```
+
+```dart
+// Flutter - Player SDK
+import 'package:orangecloud_player_client/orangecloud_player_client.dart';
+
+final player = OrangeCloudPlayerClient();
+await player.initialize(appId: 'your_app_id', licenseKey: 'your_key');
+await player.play('https://example.com/video.m3u8');
+```
 
 ---
 
 <div align="center">
 
-**OrangeCloud** — 让实时通信触手可及
+**OrangeCloud** — 让云服务触手可及
+
+[IM 文档](#) · [Player 文档](#) · [联系我们](mailto:hi@rong.fan)
 
 </div>
